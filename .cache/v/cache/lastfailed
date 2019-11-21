@@ -1,1 +1,3 @@
-{}
+{
+  "test_PasswordChecker.py::test_password_is_valid": true
+}

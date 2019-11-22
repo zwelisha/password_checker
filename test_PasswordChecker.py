@@ -30,4 +30,9 @@ def test_password_is_valid():
     with pytest.raises(Exception) as error:
         assert checker.password_is_valid("")
     assert str(error.value) == "password should exist"
-    
+
+def test_password_is_ok():
+    assert checker.password_is_ok("") == False
+    assert checker.password_is_ok("qwe") == False
+    assert checker.password_is_ok("qweB@123") == False
+    assert checker.password_is_ok("qweB@123d") == True

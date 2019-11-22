@@ -87,10 +87,35 @@ class PasswordChecker():
         finally:
             PasswordChecker.set_met_conditions(self,conditions)
             logger.info("Conditions passed while executing password_is_valid function: " + str(conditions))
+    def password_is_ok(self,password):
+        conditions = 0
+        if len(password) <= 8:
+            return False
+        else:
+            conditions += 2 # start from 2 since the password exists and has more than 8 characters
+            # check condition 5
+            if re.search("[0-9]", password): # \d could be used instead of [0-9] to check condition 5
+                logger.info("Condition 5 passed")
+                conditions += 1
+            # check condition 3
+            if re.search("[a-z]", password):
+                logger.info("Condition 3 passed")
+                conditions += 1
+
+            # check condition 4
+            if re.search("[A-Z]", password):
+                logger.info("Condition 4 passed")
+                conditions += 1
+            # checking condition 6
+            special_chars_compilation = re.compile("[@_!#$%^&*()<>?/\|}{~:\"']")
+            if special_chars_compilation.search(password) != None:
+                logger.info("Condition 6 passed")
+                conditions += 1
+        return conditions >= 3
 #Ignore this main function
 def main():
     checker = PasswordChecker()
-    print(checker.password_is_valid("dgwewd@2019Yes"))
+    print(checker.password_is_ok("dges"))
 
 if __name__ == '__main__':
     main()

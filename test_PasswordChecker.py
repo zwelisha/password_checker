@@ -30,7 +30,4 @@ def test_password_is_valid():
     with pytest.raises(Exception) as error:
         assert checker.password_is_valid("")
     assert str(error.value) == "password should exist"
-    # Extra test in case a developer pass a different data type other than a string
-    with pytest.raises(Exception) as error:
-        assert checker.password_is_valid(1234)
-    assert str(error.value) == "the function password_is_valid only accepts a string"
+    

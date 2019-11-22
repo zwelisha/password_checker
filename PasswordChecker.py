@@ -1,6 +1,11 @@
 import logging
 import re
 import time
+"""
+Written By : Zwelisha Mthethwa
+Disclaimer: This code may be copied and used by anyone who finds it usefulself.
+Date: 22 November 2019
+"""
 # create and configure logger
 logging.basicConfig(filename = "logs/problems.log", level = logging.DEBUG, format="%(asctime)s %(message)s")
 logger = logging.getLogger()
@@ -78,14 +83,14 @@ class PasswordChecker():
                 logger.info("password should be longer than than 8 characters")
                 raise Exception("password should be longer than than 8 characters")
         except TypeError as e:
-            logger.log(e)
+            logger.info(e)
         finally:
             PasswordChecker.set_met_conditions(self,conditions)
             logger.info("Conditions passed while executing password_is_valid function: " + str(conditions))
 #Ignore this main function
 def main():
     checker = PasswordChecker()
-    print(checker.password_is_valid("dgwewd@2019yes"))
+    print(checker.password_is_valid("dgwewd@2019Yes"))
 
 if __name__ == '__main__':
     main()

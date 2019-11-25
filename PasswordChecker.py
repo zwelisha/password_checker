@@ -3,7 +3,7 @@ import re
 import time
 """
 Written By : Zwelisha Mthethwa
-Disclaimer: This code may be copied and used by anyone who finds it usefulself.
+Disclaimer: This code may be copied and used by anyone who finds it useful.
 Date: 22 November 2019
 """
 # create and configure logger

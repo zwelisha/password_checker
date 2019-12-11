@@ -1212,3 +1212,26 @@ INFO:root:Conditions passed 3
 2019-12-11 10:31:11,188 Condition 3 passed
 2019-12-11 10:31:11,188 Condition 4 passed
 2019-12-11 10:31:11,188 Condition 6 passed
+2019-12-11 10:35:34,362 Condition 5 passed
+2019-12-11 10:35:34,363 Condition 3 passed
+2019-12-11 10:35:34,363 password should have at least one uppercase letter
+2019-12-11 10:35:34,363 Conditions passed while executing password_is_valid function: 4
+2019-12-11 10:35:34,365 password should be longer than than 8 characters
+2019-12-11 10:35:34,365 Conditions passed while executing password_is_valid function: 0
+2019-12-11 10:35:34,365 password should be longer than than 8 characters
+2019-12-11 10:35:34,365 Conditions passed while executing password_is_valid function: 0
+2019-12-11 10:35:34,366 Condition 5 passed
+2019-12-11 10:35:34,366 password should have at least one lowercase letter
+2019-12-11 10:35:34,366 Conditions passed while executing password_is_valid function: 3
+2019-12-11 10:35:34,368 password should at least have one digit
+2019-12-11 10:35:34,368 Conditions passed while executing password_is_valid function: 2
+2019-12-11 10:35:34,370 Condition 5 passed
+2019-12-11 10:35:34,370 Condition 3 passed
+2019-12-11 10:35:34,370 Condition 4 passed
+2019-12-11 10:35:34,370 password should have at least one special character
+2019-12-11 10:35:34,370 Conditions passed while executing password_is_valid function: 5
+2019-12-11 10:35:34,372 Conditions passed while executing password_is_valid function: 0
+2019-12-11 10:35:34,376 Condition 5 passed
+2019-12-11 10:35:34,376 Condition 3 passed
+2019-12-11 10:35:34,377 Condition 4 passed
+2019-12-11 10:35:34,377 Condition 6 passed

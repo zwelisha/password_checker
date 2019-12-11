@@ -81,7 +81,7 @@ class PasswordChecker():
                     raise Exception("password should have at least one special character")
             else:
                 logger.info("password should be longer than than 8 characters")
-                raise Exception("password should be longer than than 8 characters")
+                raise Exception("password should be longer than 8 characters")
         except TypeError as e:
             logger.info(e)
         finally:
@@ -112,10 +112,3 @@ class PasswordChecker():
                 logger.info("Condition 6 passed")
                 conditions += 1
         return conditions >= 3
-#Ignore this main function
-def main():
-    checker = PasswordChecker()
-    print(checker.password_is_ok("dges"))
-
-if __name__ == '__main__':
-    main()
